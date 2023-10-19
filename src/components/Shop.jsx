@@ -3,14 +3,13 @@ import { Product } from './Product';
 
 export const Shop = () => {
 
-  const [products ,setProducts] =useState([]);
-  const getProducts =()=>{
-   return  fetch('https://fakestoreapi.com/products')
-    .then(res=>res.json())
-    .then((data)=>setProducts(data))
-  }
+const [products ,setProducts] =useState(null);
 useEffect(()=>{
-  getProducts();
+  fetch('https://fakestoreapi.com/products')
+  .then(res=>res.json())
+  .then((data)=> {
+    console.log(data)
+    setProducts(data)})
 },[])
 
   return (

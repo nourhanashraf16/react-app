@@ -8,7 +8,7 @@ import { About } from './components/About';
 import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import { Shop } from './components/Shop';
 import { DetailsProduct } from './components/DetailsProduct';
-
+import StarRatings from "react-star-ratings";
 const App = ()=> {
 
  const [users , setUsers]=useState([

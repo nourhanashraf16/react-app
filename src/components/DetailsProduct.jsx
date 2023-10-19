@@ -6,13 +6,10 @@ export const DetailsProduct = () => {
     const productId=params.id;
     console.log(productId);
     const [product , setProduct] =useState({})
-    const getProduct =()=> {
-        return fetch(`https://fakestoreapi.com/products/${productId}`)
+    useEffect(()=>{
+        fetch(`https://fakestoreapi.com/products/${productId}`)
             .then(res=>res.json())
             .then(data=>setProduct(data))
-    };
-    useEffect(()=>{
-        getProduct()
     },[])
   return (
      <>

@@ -57,6 +57,13 @@ ul {
 .product_item .card {
   border: none;
 }
+.product_item_rating {
+  background-color: var(--sec-color);
+  width: fit-content;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+}
 @media (min-width: 576px) {
 }
 

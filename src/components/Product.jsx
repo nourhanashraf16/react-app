@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import { StarRatings } from 'react-star-ratings';
+import { FaStar } from "react-icons/fa6";
+
 export const Product = (props) => {
   console.log(props)
     console.log(props.product)
@@ -18,18 +19,10 @@ export const Product = (props) => {
             <Card.Title className='product_item_category text-center'>{category}</Card.Title>
             <Card.Text className=' text-center product_item_title '> {title}</Card.Text>
             <Card.Text className='text-muted  text-center product_item_description '> {description}</Card.Text>
-            <Card.Text className=' text-center product_item_price'> {`$ ${price}`}</Card.Text>
-            <Card.Text className='text-warning'>
-            {/* <StarRatings
-                  rating={rating.rate}
-                  starRatedColor=" rgb(255, 32, 32)"
-                  starEmptyColor="gray"
-                  numberOfStars={5}
-                  name="rating"
-/> */}
-</Card.Text>
-        </Card.Body>
+            <Card.Text className=' text-center product_item_price'> price : {`$ ${price}`}</Card.Text>
+            <Card.Text className='text-white product_item_rating'>{rating.rate } <FaStar/></Card.Text>
+            </Card.Body>
     </Card>
     </div>
-  )
+              )
 }

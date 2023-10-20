@@ -9,6 +9,7 @@ import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import { Shop } from './components/Shop';
 import { DetailsProduct } from './components/DetailsProduct';
 import StarRatings from "react-star-ratings";
+import { Counter } from './components/Counter/Counter';
 const App = ()=> {
 
  const [users , setUsers]=useState([
@@ -28,6 +29,7 @@ const App = ()=> {
                  <Route path='/about' element={<About/>}/>
                  <Route path='/users' element={<UserIngo />}/>
                  <Route path='/shop/:id' element={<DetailsProduct/>}/>
+                 <Route path='/counter' element={<Counter/>}/>
              </Routes>
             </div>
         </BrowserRouter>

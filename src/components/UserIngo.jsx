@@ -1,14 +1,22 @@
-import React from 'react'
+import React from 'react';
+import {useState , useEffect} from 'react';
 
-export const UserIngo = (props) => {
-    console.log(props)
+
+export const UserIngo = () => {
+    //component didUpdated
+    const [name, setName] = useState("");
+    useEffect(() => {
+      console.log(`name is changed ${name}`);
+  }, [name])
     
   return (
    <>
-   <ul >
-    <li>name:{props.name}</li>
-    <li>phone:{props.phone}</li>
-   </ul>
+   <input
+            placeholder="enter name"
+            onChange={e => setName(e.target.value)}
+        />
+   <p>{name}</p>
+
    </>
 
   )

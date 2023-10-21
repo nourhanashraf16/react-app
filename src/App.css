@@ -14,15 +14,16 @@ img {
 ul {
   list-style: none;
 }
+:root {
+  --sec-color: rgb(255, 32, 32);
+}
+/* start header */
 .navbar {
   position: sticky !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 3;
-}
-:root {
-  --sec-color: rgb(255, 32, 32);
 }
 .nav-link:hover {
   color: var(--sec-color) !important;

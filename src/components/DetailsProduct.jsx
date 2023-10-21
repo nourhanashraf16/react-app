@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import { FaStar } from "react-icons/fa6";
 import { Spinner } from 'react-bootstrap';
 export const DetailsProduct = () => {
-    const[Loading ,setLoading] = useState(false)
-    const params = useParams()
-    console.log(params)
+    const[Loading ,setLoading] = useState(false);
+    const params = useParams();
+    console.log(params);
     const productId=params.id;
     console.log(productId);
     const [product , setProduct] =useState({})

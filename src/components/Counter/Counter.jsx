@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
-
+import { useDispatch, useSelector } from 'react-redux';
+import{increment , decrement } from '../../redux/slices/counterSlice';
 export const Counter = () => {
-    const [counter , setCounter] = useState(10);
-    const handleIncrement =()=> {
-        setCounter(counter+1);
+ 
+    const globalCounter = useSelector((store)=>{
+        console.log(store);
+        return store.counterrr.initialCounter
     }
-    const handleDecrement = ()=>{
-        if(counter>0){
-            setCounter(counter-1);
-        }
-
-    }
+)
+   const dispatch =useDispatch();
+   const handleIncrementGlobal =()=>{
+       dispatch(increment())
+   }
+   const handleDecrementGlobal =()=>{
+    dispatch(decrement())
+}
+  
   return (
     <>
         <section className='counter py-5'>
             <div className='container'>
                 <div className='d-flex justify-content-center'>
-                <Button variant="danger" className='mx-5' onClick={handleIncrement}>Increment</Button>
-                    <h3>{counter}</h3>
-                    <Button variant="danger" className='mx-5' onClick={handleDecrement}>Decrement</Button>
+                <Button variant="danger" className='mx-5' onClick={handleIncrementGlobal}>Increment</Button>
+                    <h3>{globalCounter}</h3>
+                    <Button variant="danger" className='mx-5' onClick={handleDecrementGlobal}>Decrement</Button>
                 </div>
             </div>
         </section>

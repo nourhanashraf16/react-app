@@ -5,7 +5,7 @@ import { useGetProducts } from '../hooks/useGetProducts';
 import { Loading } from './Loading';
 export const Shop = () => {
 
-const [products ,loading, error] = useGetProducts()
+const [products ,loading, error] = useGetProducts();
 // const [Loading , setLoading] = useState(false)
 // const [products ,setProducts] =useState(null);
 // useEffect(()=>{

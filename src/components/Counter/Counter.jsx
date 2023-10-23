@@ -6,7 +6,7 @@ export const Counter = () => {
  
     const globalCounter = useSelector((store)=>{
         console.log(store);
-        return store.counterrr.initialCounter
+        return store.myCounter.initialCounter
     }
 )
    const dispatch =useDispatch();
@@ -23,7 +23,7 @@ export const Counter = () => {
             <div className='container'>
                 <div className='d-flex justify-content-center'>
                 <Button variant="danger" className='mx-5' onClick={handleIncrementGlobal}>Increment</Button>
-                    <h3>{globalCounter}</h3>
+                    <h3>Donate For us : {globalCounter} $</h3>
                     <Button variant="danger" className='mx-5' onClick={handleDecrementGlobal}>Decrement</Button>
                 </div>
             </div>

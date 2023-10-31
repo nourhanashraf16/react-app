@@ -10,6 +10,7 @@ export const Login = () => {
           console.log(data);
           console.log(errors);
     }
+    console.log(errors)
   return (
     <section className='login py-5'>
         <div className="container">

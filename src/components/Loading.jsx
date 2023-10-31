@@ -7,5 +7,5 @@ export const Loading = ({ children, loading, error }) => {
       if (error) {
         return <p>{error}</p>;
       }
-      return <div>{children}</div>;
+      return children;
 }

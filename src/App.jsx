@@ -8,7 +8,7 @@ import { Shop } from './components/Shop';
 import { DetailsProduct } from './components/DetailsProduct';
 import { Login } from './components/Login';
 import { Register } from './components/Register';
-import { Counter } from './components/Counter/Counter';
+import {Cart} from './components/Cart'
 const App = ()=> {
 
 
@@ -20,9 +20,9 @@ const App = ()=> {
                  <Route path='/' element={<Home/>}/>
                  <Route path='/shop' element={<Shop/>}/>
                  <Route path='/shop/:id' element={<DetailsProduct/>}/>
-                 <Route path='/counter' element={<Counter/>}/>
                  <Route path='/login' element={<Login/>}/>
                  <Route path='/register' element={<Register/>}/>
+                 <Route path='/cart' element={<Cart/>}/>
              </Routes>
             </div>
         </BrowserRouter>

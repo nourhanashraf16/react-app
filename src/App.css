@@ -5,7 +5,7 @@
 }
 a {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 img {
   display: block;
@@ -271,9 +271,63 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.categories_title:hover {
-}
 /* end categories section */
+/* start news section */
+
+.news a {
+  color: #000;
+  text-decoration: underline !important;
+}
+.new_title {
+  min-height: 3rem;
+}
+/* end news section */
+/* start trending section */
+/* end trending section */
+.trending {
+  background-color: #f6f6f6 !important;
+}
+.trending_header {
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+.trending_swiper {
+  width: 80% !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000 !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 30px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+.trending_title {
+  color: #292621;
+  font-size: 16px;
+  font-weight: 600;
+}
+.trending_title:hover {
+  color: var(--sec-color);
+}
+.trending_first-price {
+  color: #74706b;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+.trending_first-price:hover {
+  color: #000;
+}
+.trending_second-price {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #cebd9c;
+  text-decoration: line-through;
+}
 /* start login section */
 .login_description {
   font-weight: 500;
@@ -359,3 +413,29 @@ ul {
 }
 
 /* end cartlist section */
+
+/* start footer section */
+.footer {
+  background: #171613;
+  color: #fff;
+}
+.footer_logo {
+  width: 200px !important;
+}
+.footer_content h5 {
+}
+.footer_content ul {
+  padding-left: 0;
+}
+.footer_content ul li a {
+  color: #bbb9b5;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: underline transparent;
+  padding: 2px 0;
+}
+.footer_content ul li a:hover {
+  text-decoration: underline !important;
+}
+
+/* end footer section */

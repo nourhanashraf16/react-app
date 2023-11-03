@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Footer } from "./Footer";
 import {
   removeFromCart,
   incrementQuantity,
@@ -111,15 +112,16 @@ export const Cart = () => {
                 </tbody>
               </table>
               <div className="d-flex align-items-center justify-content-between my-5">
-              <p className="text-muted fw-bold">Total price : ${totalPrice.toFixed(2)}</p>
-              <button
-                className="btn cart_remove-all-btn"
-                onClick={() => handleRemveAll()}
-              >
-                Remove All
-              </button>
+                <p className="text-muted fw-bold">
+                  Total price : ${totalPrice && totalPrice.toFixed(2)}
+                </p>
+                <button
+                  className="btn cart_remove-all-btn"
+                  onClick={() => handleRemveAll()}
+                >
+                  Remove All
+                </button>
               </div>
-              
             </div>
           ) : (
             <div className="empty-cart d-flex align-items-center justify-content-center">
@@ -143,6 +145,7 @@ export const Cart = () => {
           )}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

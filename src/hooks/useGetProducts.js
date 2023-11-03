@@ -11,8 +11,8 @@ export const useGetProducts = () => {
       try {
         const res = await axios.get("https://fakestoreapi.com/products");
         console.log(res.data);
-        setLoading(false);
         setProducts((prev) => [...prev, ...res.data]);
+        setLoading(false);
         console.log(products); //[]
       } catch (error) {
         setLoading(false);

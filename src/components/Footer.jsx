@@ -7,10 +7,10 @@ export const Footer = () => {
     <section className="footer py-5">
       <div className="container">
         <div className="row justify-content-between">
-          <figure className="col-md-6 col-lg-4 footer_logo">
+          <figure className="col-md-6 col-lg-4 footer_logo text-sm-center text-md-start ">
             <img src={footerLogo} alt="footer_logo" />
           </figure>
-          <div className="col-md-6 col-lg-2 footer_content">
+          <div className="col-md-6 col-lg-2 footer_content text-sm-center text-md-start ">
             <h5 className="mb-3">Shop Men</h5>
             <ul>
               <li>
@@ -30,7 +30,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-lg-2 footer_content">
+          <div className="col-md-6 col-lg-2 footer_content text-sm-center  text-md-start ">
             <h5 className="mb-3">Shop Women</h5>
             <ul>
               <li>
@@ -50,7 +50,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-lg-2 footer_content">
+          <div className="col-md-6 col-lg-2 footer_content text-sm-center text-md-start">
             <h5 className="mb-3">Baby collection</h5>
             <ul>
               <li>
@@ -70,7 +70,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-lg-2 footer_content">
+          <div className="col-md-6 col-lg-2 footer_content text-sm-center  text-md-start ">
             <h5 className="mb-3">Quick Links</h5>
             <ul>
               <li>
